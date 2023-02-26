@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/bg05.jpg) no-repeat;
+    background-size: cover;
+ }
+
+ .form-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 800px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.2);
+    border-radius: 10px;
+ }
+
+ .form-register > h2 {
+    color: rgba(0,0,0,0,0.9);
+    margin-bottom: 7px;
+ }
+
+ .form-register .input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 5px;
+ }
+
+ .form-register .input-box > label {
+    margin-bottom: 3px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 13px;
+ }
+
+ .form-register .input-box > input,select {
+    box-sizing: border-box;
+    color: rgba(0,0,0,0,0.9);
+    font-size: 14px;
+    height: 35px;
+    width: 350px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    letter-spacing: 1px;
+ }
+
+ .form-register .input-box > input:focus, select:focus {
+    border: 1px solid rgba(255,255,255,0.8);
+ }
+
+ .form-register .register-button {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form-register .register-button > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+ }
+
+ .form-register .register-button > div > button {
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgba(50,50,50,0.8);
+    background: rgba(178,178,178,0.5); 
+    color: rgba(0,0,0,0,0.9);
+    border-radius: 5px;
+    transition: 0.2s;
+ }
+
+ .form-register .register-button > div > button:nth-of-type(2){
+    margin-left: 10px;
+ }
+
+ .form-register .register-button > div > button:hover {
+    border: 1px solid rgba(0,0,0,0.8);
+    background: rgba(128,128,128,0.5);
+ }
+
+ .mandatory{
+   vertical-align: middle;
+   text-align: center;
+   color: red;
+ }
+
+ .error {
+   color: #fa3030;
+   font-size: 6px;
+   /* background: rgba(255, 215, 0, 0.9);
+   border-radius: 3px; */
+   float:right;
+   height: 12px;
+   /* background-color: #ffc400; */
+}
+
+
+
+

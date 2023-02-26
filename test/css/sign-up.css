@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/bg05.jpg) no-repeat;
+    background-size: cover;
+}
+
+.box {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 600px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.2);
+}
+
+.box > h2 {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 10px;
+}
+
+.box .input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+    /* background: rgba(233, 98, 98, 0.3);
+    width: 400px; */
+}
+
+.box .input-box > label {
+    margin-bottom: 3px;
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+}
+
+.box .input-box > input {
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.9);
+    font-size: 12px;
+    height: 30px;
+    width: 340px;
+    background: rgba(243, 241, 241, 0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+
+.box .input-box > input:focus {
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.box .btn-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box .btn-box > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.box .btn-box > div > button {
+    width: 110px;
+    height: 32px;
+    border: 1px solid rgba(197, 81, 58,0.8);
+    background: rgba(197, 81, 58,0.5);
+    color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.box .btn-box > div > button:nth-of-type(2) {
+    margin-left: 30px;
+}
+
+.box .btn-box > div > button:hover {
+    border: 1px solid rgba(248, 108, 76,0.8);
+    background: rgba(248, 108, 76,0.5);
+}
+
+.mandatory{
+    vertical-align: middle;
+    text-align: center;
+    color: red;
+}
+
+
+
+.error {
+    color: #ff2929;
+    font-size: 6px;
+    /* background: rgba(255, 215, 0, 0.9);
+    border-radius: 3px; */
+    float:right;
+    height: 13px;
+    /* background-color: #ffc400; */
+}
+
+
+
+.fieldPassword > input {
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.9);
+    font-size: 12px;
+    height: 30px;
+    width: 340px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    padding-right: 35px;
+    letter-spacing: 1px;
+  }
+ 
+.fieldPassword > input:focus {
+    border: 1px solid rgba(255,255,255,0.8);
+  }
+ 
+.fieldPassword > span {
+    position: absolute;
+    margin-left: -27px;
+    margin-top: 6.5px;
+  }
+
+  
+

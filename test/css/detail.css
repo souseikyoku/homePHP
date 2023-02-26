@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/bg05.jpg) no-repeat;
+    background-size: cover;
+ }
+
+ .form-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 610px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(50,50,50,0.2);
+    border-radius: 10px;
+ }
+
+ .form-detail > h3 {
+    color: rgba(0,0,0,0,0.9);
+    margin-bottom: 3px;
+    /* margin-top: 3px; */
+ }
+
+ .form-detail .input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 5px;
+ }
+
+ .form-detail .input-box > label {
+    margin-bottom: 2px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 10px;
+ }
+
+ .form-detail .input-box > input,select {
+    box-sizing: border-box;
+    color: rgba(0,0,0,0,0.9);
+    font-size: 12px;
+    height: 30px;
+    width: 340px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+    padding: 0 10px;
+    letter-spacing: 1px;
+ }
+
+ .form-detail .input-box > input:focus, select:focus {
+    border: 1px solid rgba(255,255,255,0.8);
+ }
+
+ .form-detail .edit-button {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form-detail .edit-button > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+ }
+
+ .form-detail .edit-button > div > button {
+    width: 100px;
+    height: 28px;
+    border: 1px solid rgba(50,50,50,0.8);
+    background: rgba(178,178,178,0.5); 
+    color: rgba(0,0,0,0,0.9);
+    border-radius: 5px;
+    transition: 0.2s;
+ }
+
+ .form-detail .edit-button > div > button:nth-of-type(2), button:nth-of-type(3) {
+    margin-left: 10px;
+ }
+
+ .form-detail .edit-button > div > button:hover {
+    border: 1px solid rgba(0,0,0,0.8);
+    background: rgba(128,128,128,0.5);
+ }
+
+ .mandatory{
+   vertical-align: middle;
+   text-align: center;
+   color: red;
+ } 
+
+ .error {
+   color: #ff2929;
+   font-size: 6px;
+   float:right;
+   height: 13px;
+}

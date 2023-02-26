@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録</title>
+    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<script src="js/sign-up.js"></script>
+<style>
+    a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <form id="form" method="post" action="./mode/newUser.php">
+        <div class="box">
+            <h2>新規登録</h2>
+            <!-- 名前 -->
+            <div class="input-box">
+                <label><span class="mandatory">* </span>名前</label>
+                <input type="text" name="name" id="username" />
+                <span id="s_username" class="error"></span>
+            </div>
+
+            <!-- メールアドレス -->
+            <div class="input-box">
+                <label><span class="mandatory">* </span>メールアドレス</label>
+                <input type="email" name="email" id="email" />
+                <span id="s_email" class="error"></span>
+            </div>
+
+            <!-- パスワード -->
+            <div class="input-box">
+                <label><span class="mandatory">* </span>パスワード</label>
+
+                <div class="fieldPassword">
+                    <input type="password" name="password" id="password" />
+                    <span id="buttonEye" class="fa fa-eye" onclick="pushEyeButton()"></span>
+                </div>
+
+                <span id="s_password" class="error"></span>
+            </div>
+
+            <!-- パスワード再入力 -->
+            <div class="input-box">
+                <label><span class="mandatory">* </span>パスワード再入力</label>
+
+                <div class="fieldPassword">
+                    <input type="password" name="password2" id="password2" />
+                    <span id="buttonEye2" class="fa fa-eye" onclick="pushEyeButton2()"></span>
+                </div>
+
+                <span id="s_password2" class="error"></span>
+            </div>
+
+            <!-- 電話番号 -->
+            <div class="input-box">
+                <label>電話番号</label>
+                <input type="text" name="number" id="number" />
+                <span id="s_number" class="error"></span>
+            </div>
+
+            <!-- 生年月日 -->
+            <div class="input-box">
+                <label>生年月日</label>
+                <input type="date" name="birthday" />
+            </div>
+
+            <!-- ボタン -->
+            <div class="btn-box">
+                <div>
+                    <button type="submit">新規登録</button>
+                    <button type="button"><a href="./login.php">戻る</a></button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
